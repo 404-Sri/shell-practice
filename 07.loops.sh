@@ -51,3 +51,6 @@ do
         echo -e "$package already installed ... $Y SKIPPING $N"
     fi        
 done
+
+#
+# aws ec2 run-instances --image-id ami-09c813fb71547fc4f --instance-type t3.micro --security-group-ids sg-00863606440e73359 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Test}]' --query 'Instances[0].InstanceId' --output tex
